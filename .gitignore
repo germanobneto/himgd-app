@@ -1,0 +1,16 @@
+app/bower_components
+app/scripts/configuration.js
+coverage
+ionic.project
+keystore
+node_modules
+platforms
+plugins
+www
+.idea
+.sass-cache
+.temp
+*.DS_Store
+*.log
+*.swo
+*.swp

@@ -1,0 +1,25 @@
+<ion-view title="Cadastro">
+  <ion-content padding="true" class="has-header">
+    <form class="list" ng-submit="doSignup()">
+      <ion-list>
+        <label class="item item-input">
+          <span class="input-label">Nome</span>
+          <input type="text" ng-model="signupData.name" placeholder="{{namePlaceholder}}">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">E-mail</span>
+          <input type="email" ng-model="signupData.email" placeholder="{{emailPlaceholder}}">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Senha</span>
+          <input type="password" ng-model="signupData.password" placeholder="{{passwordPlaceholder}}">
+        </label>
+      </ion-list>
+      <div class="spacer" style="height: 40px;"></div>
+      <label class="item">
+        <button class="button button-block button-positive" type="submit">Cadastrar</button>
+      </label>
+      <a href="#/app/login" class="button button-positive button-clear button-block">Já tem uma conta ? Acesse.</a>
+    </form>
+  </ion-content>
+</ion-view>

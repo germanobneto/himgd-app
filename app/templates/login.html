@@ -1,0 +1,21 @@
+<ion-view title="Acesso">
+    <ion-content padding="'true'" class="has-header">
+        <form class="list" ng-submit="doLogin()">
+            <ion-list>
+                <label class="item item-input">
+                    <span class="input-label">Usuário</span>
+                    <input type="email" ng-model="loginData.email" placeholder="{{emailPlaceholder}}">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Senha</span>
+                    <input type="password" ng-model="loginData.password" placeholder="{{passwordPlaceholder}}">
+                </label>
+            </ion-list>
+            <div class="spacer" style="height: 40px;"></div>
+            <button class="button button-block button-positive" type="submit">Acessar por senha</button>
+        </form>
+        <button class="button button-block button-positive" ng-click="doLoginFacebook()">Acessar via facebook</button>
+        <button class="button button-block button-positive" ng-click="doLoginGoogle()">Acessar via google</button>
+        <a href="#/app/signup" class="button button-positive button-clear button-block">Ainda não tem uma conta ? Cadastre-se.</a>
+    </ion-content>
+</ion-view>
