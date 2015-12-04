@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app', ['ionic', 'config', 'app.services', 'app.controllers', 'app.routes'])
+angular.module('app', ['ionic', 'ngCordova', 'config', 'app.services', 'app.controllers', 'app.routes'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {

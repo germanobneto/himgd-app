@@ -1,5 +1,14 @@
 <ion-view title="Minhas informações">
   <ion-content padding="true" class="has-header">
-    Permite visualizar e alterar informações
+    <ion-list>
+      <label class="item item-input">
+        <span class="input-label">Nome</span>
+        <span class="input-label">{{profileData.name}}</span>
+      </label>
+      <label class="item item-input">
+        <span class="input-label">E-mail</span>
+        <span class="input-label">{{profileData.email}}</span>
+      </label>
+    </ion-list>
   </ionic-content>
 </ion-view>

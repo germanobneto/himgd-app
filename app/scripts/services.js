@@ -3,7 +3,7 @@
 angular.module('app.services', ['ngResource'])
 
 .factory('UserFactory', function($resource, ENV) {
-  return $resource(ENV.apiEndpoint + '/api/users');
+  return $resource(ENV.apiEndpoint + '/api/users/me');
 })
 
 .factory('AuthLocalFactory', function($resource, ENV) {
