@@ -1,0 +1,69 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "work.himgd.app"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "work.himgd.app"
+        },
+        "org.apache.cordova.inappbrowser": {
+            "PACKAGE_NAME": "work.himgd.app"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+            "id": "cordova-plugin-splashscreen.SplashScreen",
+            "pluginId": "cordova-plugin-splashscreen",
+            "clobbers": [
+                "navigator.splashscreen"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-whitelist/whitelist.js",
+            "id": "cordova-plugin-whitelist.whitelist",
+            "pluginId": "cordova-plugin-whitelist",
+            "runs": true
+        },
+        {
+            "file": "plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js",
+            "id": "org.apache.cordova.inappbrowser.inappbrowser",
+            "pluginId": "org.apache.cordova.inappbrowser",
+            "clobbers": [
+                "window.open"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-splashscreen": "3.0.0",
+        "cordova-plugin-whitelist": "1.2.0",
+        "org.apache.cordova.inappbrowser": "0.6.0"
+    }
+}
